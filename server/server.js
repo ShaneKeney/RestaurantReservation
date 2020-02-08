@@ -16,12 +16,14 @@ app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "templates/home.html"));
 });
 
+app.use(express.static(__dirname));
+
 app.get("/tables", function(req, res) {
-    res.sendFile(path.join(__dirname, "tables.html"));
+    res.sendFile(path.join(__dirname, "templates/tables.html"));
 });
 
 app.get("/reserve", function(req, res) {
-    res.sendFile(path.join(__dirname, "reserve.html"));
+    res.sendFile(path.join(__dirname, "templates/reserve.html"));
 });
 
 app.post("/reserve.html", function(req, res) {
