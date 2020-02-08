@@ -24,7 +24,8 @@ app.get("/", function(req, res) {
     let responseReservation = req.body;
     let newReservation = new reservation(responseReservation.id, responseReservation.eventNames, 
         responseReservation.email, responseReservation.phoneumber);
-        
+    });
+
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
-  })
+})
