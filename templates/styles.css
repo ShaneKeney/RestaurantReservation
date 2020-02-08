@@ -1,0 +1,33 @@
+.resContainer, .waitContainer {
+    border-radius: 5px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.resHeader {
+    font-size: 1.2em;
+}
+
+.headerContainer {
+    background-color:rgb(238,238,238);
+}
+
+.reservation {
+    height: 75px;
+
+    background-color: rgb(238,238,238);
+    border-radius: 5px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.reservationNumberContainer {
+    border-radius: 5px;
+    background-color: rgb(51,122,183);
+}
+
+.resInfo {
+    font-size: 1.0em;
+}
