@@ -23,11 +23,11 @@
 
       <div class="text-center">
         <a href="/tables">
-          <button class="btn btn-lg btn-primary">
-            <span class="fa fa-list-alt"></span> Tables</button>
+          <button class="btn btn-lg btn-primary" id="tables">
+            <span class="fa fa-list-alt"></span>Tables</button>
         </a>
         <a href="/">
-          <button class="btn btn-lg btn-default">
+          <button class="btn btn-lg btn-default" id="home">
             <span class="fa fa-home"></span>
           </button>
         </a>
@@ -82,6 +82,17 @@
 </body>
 
 <script type="text/javascript">
+  let fs = require("fs");
+  $("#home").on("click", function(){
+    app.get("/", function (req, res) {
+      res.sendFile(path.join(__dirname, "home.html"));
+    });
+  });
+
+  $("#tables").on("click", function(){
+    res.sendFile(path.join(__dirname, "tables.html"));
+  });
+
    $(".submit").on("click", function(event) {
     event.preventDefault();
 
