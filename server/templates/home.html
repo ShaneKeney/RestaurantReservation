@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <title>Home Page</title>
+        <script src="https://code.jquery.com/jquery.js"></script> <!-- JQ -->
     </head>
     <body>
         <div class="container">
@@ -15,7 +16,7 @@
                 <br>
 
                 <div class="text-center">
-                    <a href="/tables"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> View Tables</button></a>
+                    <a href="/tables"><button type="button" class="btn btn-lg btn-primary" id="#tables"><span class="glyphicon glyphicon-list-alt"></span> View Tables</button></a>
                     <a href="/reserve"><button type="button" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
                 </div>
             </div>
@@ -25,5 +26,14 @@
                 <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
             </div>
         </footer>
+
+        <script type="text/javascript">
+            $(document).ready({
+                $("#tables").on("click", function() {
+                    
+                })
+            })
+        </script>
+
     </body>
 </html>
